@@ -1,0 +1,33 @@
+<html>
+  <head>
+    	<meta charset="utf-8">
+        <title>Pong</title>
+          <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+          <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+          <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+  <body> 
+      <i class="icon ion-arrow-expand" style= "font-size: 72px; color: white; padding: 10px;" onclick="launchFullScreen(document.documentElement)"></i>
+  		<div id="canvas-container"></div>
+      <div id="gameover" onclick="location.reload()" style="visibility:hidden"></div>
+      <!-- Scripts -->
+      <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+      <script src="pong.js"></script>
+
+      <script type="text/javascript">
+        function launchFullScreen(element) {
+          if (element.requestFullscreen)
+            { element.requestFullscreen(); }
+          else if (element.mozRequestFullScreen)
+            { element.mozRequestFullScreen(); }
+          else if (element.webkitRequestFullscreen)
+            { element.webkitRequestFullscreen(); }
+          else if (element.msRequestFullscreen)
+            { element.msRequestFullscreen(); }
+        }
+      </script>
+
+
+
+  </body>
+</html>
